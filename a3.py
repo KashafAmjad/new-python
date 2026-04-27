@@ -1,6 +1,6 @@
+class student:
+    grade = 10
+    print("Hi I am a student of grade" ,grade)
 
-for i in range(10):
-    if i == 5:
-        print(exit)
-        exit()
-    print(i)   
+
+ob= student()
