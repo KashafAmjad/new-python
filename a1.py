@@ -1,13 +1,18 @@
-numbers1=[1,2,3]
-numbers2=[4,5,6]
-result=map(lambda x, y: x + y,numbers1,numbers2)
-print("Addition of two lists")
-print(list(result))
-
-#part2
-num=[1,2,3,4,5]
-def sq(n):
-    return n*n
-square=list(map(sq,num))
-print("Square of number in list")
-print(square)
+class Person( object ):
+        def __init__(self, name, idnumber):
+         self.name=name
+         self.idnumber=idnumber
+        def display(self):
+                print (self.name)
+                print (self.idnumber)
+class Employee(Person):
+        def __init__(self, name, idnumber,salary,post):
+          self.salary=salary
+          self.post=post
+          Person.__init__(self, name, idnumber)
+print("Employee1 detail:")
+a=Employee("ali", 678929,400000000,"CEO")
+a.display()
+print(a.salary)
+print(a.post)
+print("\n")
