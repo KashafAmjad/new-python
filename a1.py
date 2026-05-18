@@ -1,11 +1,13 @@
-class myClass:
-    __privateVar=27;
-    def__privMeth = (self):
-    print("I'm inside class myClass")
-    def hello(self):
-        print("Private Variable value:",myClass.__privateVar)
-  
+class Book:
+    def__init__(self,t,a):
+    self.title = t
+    self.author = a
+    self.is__borrowed = False
 
-obj=myClass()
-obj.hello()
-obj.__privMeth
+    def borrow(self):
+        self.is_borrowed = True
+        print(self.title + "book borrowed")
+
+    
+
+    
